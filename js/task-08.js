@@ -23,7 +23,7 @@ function onFormSubmit(event){
 } = event.currentTarget
 
 if (email.value.trim === '' || password.value === ''){
-    return console.log ('Please fill in all the fields')
+    return alert ('Please fill in all the fields')
 
 }
 
