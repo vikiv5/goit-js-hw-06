@@ -10,6 +10,7 @@
 //Для доступу до елементів форми використовуй властивість elements.
 
 //Виведи об'єкт із введеними даними в консоль і очисти значення полів форми методом reset.
+//У восьмому завданні при відправці форми потрібно виводити об'єкт з даними з полів, у вас рядок.  
 
 const form = document.querySelector ('.login-form')
 form.addEventListener ('submit', onFormSubmit)
@@ -26,8 +27,7 @@ if (email.value.trim === '' || password.value === ''){
 
 }
 
-console.log(`Login': $ {login.value},
-Password : ${password.value}`)
+console.log({email:email.value, password:password.value})
 
 event.currentTarget.reset ()
 }
